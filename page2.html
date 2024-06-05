@@ -1,0 +1,135 @@
+<DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <title> Nuclear Fission </title>
+    </head>
+    <body>
+        <div class = 'topPage'>
+            <header>
+                <nav>
+                    <ul>
+                        <li class = 'navButton'><a href = "signUpPage.html">Sign Up</a></li>
+                        <li class = 'navButton'><a href = "index.html">Home</a></li>
+                        <li class = 'navButton'><a href = "page4.html">Benefits and Challenges</a></li>
+                        <li class = 'navButton'><a href = "page2.html">Fission</a></li>
+                        <li class = 'navButton'><a href = "page3.html">Fusion</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <h1 class = 'webTitle'>What is Nuclear Fission?</h1>
+        </div>
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="fissionVid.crdownload" type="video/mp4">
+            </video>
+        </div>
+
+        <div class = 'content'>
+            <h2>Introduction to Nuclear Fission</h2>
+            <p>
+                Nuclear fission is a process where the nucleus of an atom splits into smaller parts, 
+                releasing a large amount of energy. This phenomenon is the principle behind both nuclear 
+                reactors that generate electricity and the powerful explosions of atomic bombs. 
+                Understanding nuclear fission is crucial for grasping how we harness nuclear energy and manage its risks.
+            </p>
+            
+            <h2>The Science Behind Nuclear Fission</h2>
+            <p>
+                At the core of nuclear fission is the splitting of a heavy atomic nucleus, typically 
+                uranium-235 or plutonium-239, when it absorbs a neutron. This split produces two smaller 
+                nuclei, additional neutrons, and a considerable amount of energy in the form of heat and radiation. 
+                The extra neutrons can induce further fission reactions, creating a chain reaction that can 
+                be controlled in a nuclear reactor or unleashed in a nuclear bomb.
+            </p>
+            
+            <h2>Applications of Nuclear Fission</h2>
+            <p>
+                Nuclear fission is predominantly used in nuclear power plants to generate electricity. 
+                Here, the heat from fission reactions is used to produce steam that drives turbines, 
+                generating electrical power. In the military sector, fission is the fundamental process 
+                behind the explosive power of atomic bombs. Additionally, the medical field uses isotopes 
+                produced by fission reactions for diagnostic imaging and cancer treatments.
+            </p>
+        </div>
+
+
+    </body>
+    <style>
+        body{
+            background-color: rgb(29, 29, 29);
+        }
+        .video-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        video {
+            width: 80%;
+            height: auto;
+        }
+        nav {
+            width: 75%;
+            height: 20%;
+        }
+        .navButton {
+            font-family: arial;
+            font-size: 20px;
+            color: #ffffff;
+            padding: 20px;
+            float: right;
+            list-style-type: none;
+        }
+        a {
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-size: 85%;
+            color: #ffffff;
+            padding-bottom: 20px;
+            position: relative;
+        }
+        a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #ffffff;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+        a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        .webTitle {
+            font-family: 'Poppins', sans-serif;
+            font-size: 60px;
+            color: #ffffff;
+            padding-left: 18px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+        .content {
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .content h2 {
+            font-size: 36px;
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 10px;
+            padding-top: 30px;
+        }
+        .content p {
+            text-indent: 3%;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+</html>

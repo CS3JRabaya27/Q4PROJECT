@@ -1,0 +1,150 @@
+<DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <title>Nuclear Science </title>
+    </head>
+    <body>
+        <div class = 'topPage'>
+            <header>
+                <nav>
+                    <ul>
+                        <li class = 'navButton'><a href = "signUpPage.html">Sign Up</a></li>
+                        <li class = 'navButton'><a href = "index.html">Home</a></li>
+                        <li class = 'navButton'><a href = "page3.html">Benefits and Challenges</a></li>
+                        <li class = 'navButton'><a href = "page2.html">Fission</a></li>
+                        <li class = 'navButton'><a href = "page3.html">Fusion</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <h1 class = 'webTitle'>Nuclear Science: Exploring the Use of Nuclear Reactions for Power Generation</h1>
+            <div class="video-background">
+                <video autoplay muted loop id="background-video">
+                    <source src="page1Vid.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class = 'bottomPart'>
+                <div class = 'content'>
+                <p>
+                    Nuclear energy is a powerful and efficient source of electricity generated through
+                    nuclear reactions, primarily fission, where atomic nuclei split to release energy. 
+                    This process takes place in nuclear power plants, where the heat produced from fission 
+                    is used to generate steam that drives turbines to produce electricity. As a low-carbon energy 
+                    source, nuclear power contributes to reducing greenhouse gas emissions, making it a key 
+                    player in the transition towards sustainable energy systems. However, it also poses challenges, 
+                    including radioactive waste management and concerns about safety and environmental impacts.
+                <br>
+                </br>
+                    Nuclear energy is a form of energy produced through nuclear reactions, primarily used for 
+                    electricity generation. It is derived from the nucleus of atoms, the core that contains protons 
+                    and neutrons. There are two primary methods to harness nuclear energy: nuclear fission and nuclear fusion.
+                </p>
+                </div>
+                <img src = "page1pic.jpg" class = 'topImage'>
+            </div>
+        </div>
+
+    </body>
+
+    <style>
+        body {
+        background-color: darkslategray;
+    }
+    nav {
+        width: 75%;
+        height: 20%;
+    }
+    .navButton {
+        font-family: arial;
+        font-size: 20px;
+        color: #ffffff;
+        padding: 20px;
+        float: right;
+        list-style-type: none;
+    }
+    .bottomPart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .content {
+        text-indent: 3%;
+        display: flex;
+        align-items: flex-start;
+        max-width: 80%;
+    }
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-size: large;
+        color: #ffffff;
+        text-align: justify;
+        margin-right: 20px;
+        padding-top: 50%;
+        padding-left: 30px;
+    }
+    .topImage {
+        padding-right: 20px;
+        padding-top: 40%;
+        display: block;
+        margin: 0 auto;
+        height: 100%;
+        width: 50%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    a {
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        font-size: 85%;
+        color: #ffffff;
+        padding-bottom: 20px;
+        position: relative;
+    }
+    a::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #ffffff;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    a:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    .webTitle {
+        font-family: 'Poppins', sans-serif;
+        font-size: 50px;
+        color: #ffffff;
+        padding-left: 18px;
+        padding-top: 30px;
+        text-align: center;
+    }
+    #background-video {
+        object-fit: cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, -50%);
+    }
+    .video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1;
+    }
+    </style>
+</html>

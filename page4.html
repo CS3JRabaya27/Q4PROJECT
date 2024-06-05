@@ -1,0 +1,149 @@
+<DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <title> Benefits and Challenges </title>
+    </head>
+    <body>
+        <div class = 'topPage'>
+            <header>
+                <nav>
+                    <ul>
+                        <li class = 'navButton'><a href = "signUpPage.html">Sign Up</a></li>
+                        <li class = 'navButton'><a href = "index.html">Home</a></li>
+                        <li class = 'navButton'><a href = "page4.html">Benefits and Challenges</a></li>
+                        <li class = 'navButton'><a href = "page2.html">Fission</a></li>
+                        <li class = 'navButton'><a href = "page3.html">Fusion</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <h1 class = 'webTitle'>Nuclear Energy: Benefits and Challenges</h1>
+        </div>
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="nuclearVid.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class = 'content'>
+            <h1 class = 'contentTitle'>Nuclear Fission: </h1>
+            <h2>Benefits</h2>
+            <p>
+                Nuclear fission, used in nuclear power plants, provides a significant amount of energy with 
+                a relatively small amount of fuel. It produces minimal greenhouse gas emissions during operation, 
+                making it a cleaner alternative to fossil fuels. Additionally, nuclear power plants offer a 
+                stable and continuous energy supply, which isn't dependent on weather conditions.
+            </p>
+        
+            <h2>Challenges</h2>
+            <p>
+                Despite its advantages, nuclear fission presents several challenges. Nuclear accidents, 
+                although rare, can have devastating effects on human health and the environment. Managing 
+                radioactive waste, which remains hazardous for thousands of years, requires secure and long-term 
+                storage solutions. The high costs of building and maintaining nuclear power plants, along with 
+                concerns over nuclear proliferation, also pose significant challenges.
+            </p>
+        
+            <h1 class = 'contentTitle'>Nuclear Fusion: </h1>
+            <h2>Benefits</h2>
+            <p>
+                Nuclear fusion, the process that powers stars, offers the promise of an almost limitless and 
+                clean energy source. Fusion produces no long-lived radioactive waste, and the fuel, primarily 
+                isotopes of hydrogen, is abundant and widely available. Fusion reactions release significantly 
+                more energy than fission reactions, making it an efficient power source.
+            </p>
+        
+            <h2>Challenges</h2>
+            <p>
+                Achieving the necessary conditions for nuclear fusion—extreme temperatures and pressures—is a 
+                major technical challenge. Current experimental reactors require more energy to sustain the 
+                reaction than they produce. While projects like ITER are working towards making fusion energy 
+                viable, significant research and technological advancements are still needed. The cost of developing 
+                fusion technology is also high, and it remains uncertain when practical and commercial fusion 
+                reactors will become available.
+            </p>
+        </div>
+
+    </body>
+    <style>
+        body{
+            background-color: rgb(29, 29, 29);
+        }
+        .video-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        video {
+            width: 80%;
+            height: auto;
+        }
+        nav {
+            width: 75%;
+            height: 20%;
+        }
+        .navButton {
+            font-family: arial;
+            font-size: 20px;
+            color: #ffffff;
+            padding: 20px;
+            float: right;
+            list-style-type: none;
+        }
+        a {
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-size: 85%;
+            color: #ffffff;
+            padding-bottom: 20px;
+            position: relative;
+        }
+        a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #ffffff;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+        a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        .webTitle {
+            font-family: 'Poppins', sans-serif;
+            font-size: 60px;
+            color: #ffffff;
+            padding-left: 18px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+        .content {
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .contentTitle {
+            font-size: 40px;
+            padding-top: 60px;
+        }
+        .content h2 {
+            font-size: 36px;
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+        .content p {
+            text-indent: 3%;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+</html>
